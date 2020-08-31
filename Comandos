@@ -1,4 +1,4 @@
-CREATE DATABASE XXXXXX;                      // Comando para criar um novo banco de dados.
+CREATE DATABASE XXXXXX;                      // **Comando** para criar um novo banco de dados.
 
 CREATE TABLE XXXXXXX(                       //Comando para criar tabelas dentro do BD. 
   `idcurso` int(11) NOT NULL DEFAULT '0',

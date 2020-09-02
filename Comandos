@@ -33,3 +33,37 @@ order by ano;
 select nome, carga, totaulas from cursos
 where carga > 35 or totaulas <30;
 
+select * from cursos
+where nome = 'php';
+
+select * from cursos
+where nome not like '%a%';
+
+select * from cursos
+where nome like '%a%';
+
+update cursos set nome = 'POO' where idcurso = '9';
+
+select * from gafanhotos
+where nome like '%s__va';
+
+select distinct nacionalidade from gafanhotos
+order by nacionalidade;
+
+select count(*) from cursos;
+
+select count(*) from cursos where carga >40;
+
+select max(carga) from cursos;
+
+select max(totaulas) from cursos where '2016';
+
+select nome, min(totaulas) from cursos where ano = '2016';
+
+select sum(totaulas) from cursos where ano = '2016';
+
+select avg(totaulas) from cursos where ano = 2016;
+
+select * from gafanhotos
+where sexo = 'F';
+

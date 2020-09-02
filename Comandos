@@ -19,3 +19,17 @@ drop database nomedobanco   //Comando para apagar completamente um BD.
 default character set utf8  
 default collate utf8_general_ci; //Comandos usados para definir acentuação para o BD.
 
+select * from cursos
+order by ano, nome;
+
+select * from cursos
+where totaulas between '20' and '30'
+order by totaulas;
+
+select nome, descricao, ano from cursos
+where ano in (2014, 2016, 2020)
+order by ano;
+
+select nome, carga, totaulas from cursos
+where carga > 35 or totaulas <30;
+
